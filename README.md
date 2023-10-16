@@ -81,8 +81,25 @@ ftp, ssh, telnet, smtp, http, netbios-ssn, nfs, ftp, mysql, postgresql, vnc, x11
 |       http://www.cvedetails.com/cve/2014-0224
 |_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0224
 ```
-
-
+### Порт 21
+```nmap
+21/tcp   open  ftp         vsftpd 2.3.4
+| ftp-vsftpd-backdoor: 
+|   VULNERABLE:
+|   vsFTPd version 2.3.4 backdoor
+|     State: VULNERABLE (Exploitable)
+|     IDs:  BID:48539  CVE:CVE-2011-2523
+|       vsFTPd version 2.3.4 backdoor, this was reported on 2011-07-04.
+|     Disclosure date: 2011-07-03
+|     Exploit results:
+|       Shell command: id
+|       Results: uid=0(root) gid=0(root)
+|     References:
+|       https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/unix/ftp/vsftpd_234_backdoor.rb
+|       http://scarybeastsecurity.blogspot.com/2011/07/alert-vsftpd-download-backdoored.html
+|       https://www.securityfocus.com/bid/48539
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2523
+```
 ## Задание 2
 
 Проведите сканирование Metasploitable в режимах SYN, FIN, Xmas, UDP.
