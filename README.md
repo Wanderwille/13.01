@@ -28,7 +28,6 @@ ftp, ssh, telnet, smtp, http, netbios-ssn, nfs, ftp, mysql, postgresql, vnc, x11
 Какие уязвимости были вами обнаружены? (список со ссылками: достаточно трёх уязвимостей)
 
 '''nmap
-
 5432/tcp open  postgresql  PostgreSQL DB 8.3.0 - 8.3.7
 | ssl-poodle: 
 |   VULNERABLE:
